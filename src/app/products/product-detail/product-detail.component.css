@@ -1,0 +1,43 @@
+.grid-container img {
+    opacity: 0.8; 
+    cursor: pointer; 
+}
+.grid-container img:hover {
+    opacity: 1;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+    }
+  .grid-container>li{
+    border: 1px solid #2c7873;
+    margin: 20px 5px;
+  }
+  table, td, th {    
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 15px;
+}
+
+.checkout{
+    position: absolute;
+    right: 100px;
+    top: 35px;
+}
+.mycart{
+    background: #1f5652;
+    color: white;
+    position: relative;
+    left: 20px;
+    border-radius: 6px;
+    margin: 10px 0px;
+}

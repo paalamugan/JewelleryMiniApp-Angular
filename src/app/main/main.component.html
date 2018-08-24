@@ -1,0 +1,81 @@
+<div class="headermain" fxLayout="row">
+    <div fxFlex="15">
+   <div class="logo">
+       <span style="position: relative;top: 5px;"><mat-icon>view_list</mat-icon></span>
+     <span>Jewellery App</span>
+   </div>
+   <!-- <a href="#" class="nav-trigger"><span></span></a> -->
+ </div>
+ 
+ 
+ <div fxFlex="50"  fxLayout="column" fxLayoutAlign="center end" >
+  
+ </div>
+ </div>
+ <div fxLayout="row">
+    <div fxFlex="15">
+  <div class="side-nav">
+    <div class="logo">
+        <span style="position: relative;top: 5px;"><mat-icon>view_list</mat-icon></span>
+      <span>Jewellery App</span>
+    </div>
+  
+    <nav>
+      <ul>
+        <li>
+          <a>
+            <span style="position: relative;top: 6px;"><mat-icon>home</mat-icon></span>
+            <span>Home</span>
+          </a>
+        </li>
+        <li>
+          <a routerLink='product' routerLinkActive="active">
+  
+              <span style="position: relative;top: 6px;"><mat-icon>polymer</mat-icon></span>
+            <span>Product</span>
+           
+          </a>
+         
+        </li>
+        <li class="active">
+          <a>
+              <span style="position: relative;top: 6px;"><mat-icon>shopping_cart</mat-icon></span>
+            <span>Orders</span>
+          </a>
+          <!-- <mat-menu #orders="matMenu">
+              <button  routerLinkActive="active"  mat-menu-item>Orders List</button>
+            
+            </mat-menu> -->
+        </li>
+      </ul>
+    </nav>
+  </div>
+  </div>
+  <div fxFlex="85">
+  <div class="main-content">
+    <div class="over">  
+        <router-outlet></router-outlet>
+      </div>
+  
+  </div>
+  </div>
+</div>
+<!-- <div fxLayout="row">
+  <div fxFlex="100">
+    <div fxFlex="20" style="background: red;">
+
+      <h1>jewellery</h1>
+    </div>
+    <div fxFlex="80" style="background: yellow"></div>
+  </div>
+</div>
+<div fxLayout="row"  fxLayoutAlign="start stretch">
+  <div fxFlex="20" style="background:aqua">
+    <nav>
+      <ul>
+        <li>home</li>
+        <li>Ptoduct</li>
+      </ul>
+    </nav>
+  </div>
+</div> -->
