@@ -1,0 +1,99 @@
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
+  .cdk-overlay-pane{
+    width: 50% !important;
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 20px;
+        }
+      .grid-container>li{
+        border: 1px solid #2c7873;
+        margin: 20px 5px;
+      }
+      .grid-container_4grid{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-gap: 20px;
+      }
+      .grid-container_4grid>li{
+        border: 1px solid #2c7873;
+        margin: 20px 5px;
+      }
+      .grid-container_5grid{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        grid-gap: 20px;
+      }
+      .grid-container_5grid>li{
+        border: 1px solid #2c7873;
+        margin: 20px 5px;
+      }
+      .grid-container_3grid{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 20px;
+      }
+      .grid-container_3grid>li{
+        border: 1px solid #2c7873;
+        margin: 20px 5px;
+      }
+      .grid-container_title{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-gap: 20px;
+      }
+      .grid-container_title>li{
+        border: 1px solid #2c7873;
+        margin: 20px 5px;
+      }
+     
+   .view{
+       right: 30px;
+   }
+.grid-container img {
+        opacity: 0.8; 
+        cursor: pointer; 
+    }
+.grid-container img:hover {
+        opacity: 1;
+    }
+    .padding{
+        margin-left: 10px;
+    }
+    .column1{
+        float: left;
+        width: 50%;
+    }
+   
+      #myUL {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+      
+      #myUL li a {
+        border: 1px solid #ddd;
+        margin-top: 0px; /* Prevent double borders */
+        background-color: #2c7873;
+        cursor: pointer; 
+        padding: 12px;
+        text-decoration: none;
+        font-size: 18px;
+        color: #ffffff;
+        display: block;
+        text-align: center
+      }
+      
+      #myUL li a:hover:not(.header) {
+        background-color: #6fb98f;
+      }
+    
