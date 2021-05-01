@@ -1,56 +1,60 @@
 <div fxLayout="row" style="border-bottom: 2px solid #4f8466;" fxLayoutAlign="center">
-  <div fxFlex="50">
-    <div fxLayout="row">
-      <div fxFlex="40" class="mycart" fxFlexAlign="center">
-         <h2 style="margin-left: 30px" ><mat-icon style="position: relative; top: 5px;">add_shopping_cart</mat-icon> My Cart</h2>
-      </div>
-      <div fxFlex="50" fxFlexAlign="center">
-        <h2 style="position: relative;left:100px">Total:{{salesorder.total}}</h2>
+    <div fxFlex="50">
+        <div fxLayout="row">
+            <div fxFlex="40" class="mycart" fxFlexAlign="center">
+                <h2 style="margin-left: 30px">
+                    <mat-icon style="position: relative; top: 5px;">add_shopping_cart</mat-icon> My Cart
+                </h2>
+            </div>
+            <div fxFlex="50" fxFlexAlign="center">
+                <h2 style="position: relative;left:100px">Total:{{salesorder.total}}</h2>
+            </div>
         </div>
+
     </div>
-   
-  </div>
-  <div fxFlex="50" fxFlexAlign="center" >
-    <button type="button" class="checkout" (click)="checkout()" style="background-color: #1f5652;color:white" mat-button >CheckOut</button>
-   </div>
+    <div fxFlex="50" fxFlexAlign="center">
+        <button type="button" class="checkout" (click)="checkout()" style="background-color: #1f5652;color:white" mat-button>CheckOut</button>
+    </div>
 </div>
 <div fxLayout="column">
-<div fxFlex="50">
-  <ul id="myUL">
-      <li style="border-bottom: 2px solid #1f5652;padding:5px;" *ngFor="let option of salesorder.product1">
-      
-
-<div fxFlex="25"><img src={{option.imageUrl}} alt={{option.productName}} style="width: 100%; height: 200px;">
+    <div fxFlex="50">
+        <ul id="myUL">
+            <li style="border-bottom: 2px solid #1f5652;padding:5px;" *ngFor="let option of salesorder.product1">
 
 
-</div>
+                <div fxFlex="25"><img src={{option.imageUrl}} alt={{option.productName}} style="width: 100%; height: 200px;">
 
-<div fxFlex="25" style="margin-left: 40px;">
-  <h1>{{option.productName}}</h1>
-  <p>quantity:{{option.quantity}}</p>
-  <p>Price:{{option.price}}</p>
-</div>
-<div fxFlex="25" style="padding: 70px 30px;">
-  <div fxLayout="row" fxLayout.xs="column">
-    <div fxFlex="25" fxFlexAlign="center">
-        <button type="button" (click)="minus(option)">-</button>
-  
-  </div>
-  <div fxFlex="25">
-  <span>{{option.quantity}}</span>
-  </div>
-  <div fxFlex="25">
-      <button type="button" (click)="add(option)">+</button>
-   </div>
-  </div>
-   
-  
-  </div>
-<div fxFlex="25"  style="padding: 60px;">
-    <button type="button" mat-button (click)="delete(option)"><mat-icon>delete</mat-icon></button>
-</div>
 
-</li>
-</ul> 
-</div>
+                </div>
+
+                <div fxFlex="25" style="margin-left: 40px;">
+                    <h1>{{option.productName}}</h1>
+                    <p>quantity:{{option.quantity}}</p>
+                    <p>Price:{{option.price}}</p>
+                </div>
+                <div fxFlex="25" style="padding: 70px 30px;">
+                    <div fxLayout="row" fxLayout.xs="column">
+                        <div fxFlex="25" fxFlexAlign="center">
+                            <button type="button" (click)="minus(option)">-</button>
+
+                        </div>
+                        <div fxFlex="25">
+                            <span>{{option.quantity}}</span>
+                        </div>
+                        <div fxFlex="25">
+                            <button type="button" (click)="add(option)">+</button>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div fxFlex="25" style="padding: 60px;">
+                    <button type="button" mat-button (click)="delete(option)">
+            <mat-icon>delete</mat-icon>
+          </button>
+                </div>
+
+            </li>
+        </ul>
+    </div>
 </div>

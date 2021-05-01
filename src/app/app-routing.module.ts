@@ -5,29 +5,29 @@ import { ProductDetailComponent } from './products/product-detail/product-detail
 import { CheckOutComponent } from './products/check-out/check-out.component';
 import { SalesOrder } from './models/salesorder';
 
-var salesorder:SalesOrder;
+var salesorder: SalesOrder;
 const routes: Routes = [
     {
-        path: '', redirectTo:'product', pathMatch:'full'
+        path: '', redirectTo: 'product', pathMatch: 'full'
     },
     {
         path: 'product',
-        component:ProductComponent
+        component: ProductComponent
     },
     {
         path: 'product/:productName',
-        component:ProductComponent
+        component: ProductComponent
     },
     {
         path: 'checkout',
-        component:CheckOutComponent,
+        component: CheckOutComponent,
     },
     {
         path: 'checkout/:product',
-        component:CheckOutComponent,
+        component: CheckOutComponent,
     },
 
-   ];
+];
 
 @NgModule({
     imports: [RouterModule.forRoot(routes)],

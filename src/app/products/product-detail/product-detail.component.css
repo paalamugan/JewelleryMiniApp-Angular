@@ -1,20 +1,26 @@
 .grid-container img {
-    opacity: 0.8; 
-    cursor: pointer; 
+    opacity: 0.8;
+    cursor: pointer;
 }
+
 .grid-container img:hover {
     opacity: 1;
 }
+
 .grid-container {
     display: grid;
     grid-template-columns: auto auto;
     grid-gap: 20px;
-    }
-  .grid-container>li{
+}
+
+.grid-container>li {
     border: 1px solid #2c7873;
     margin: 20px 5px;
-  }
-  table, td, th {    
+}
+
+table,
+td,
+th {
     border: 1px solid #ddd;
     text-align: left;
 }
@@ -24,16 +30,18 @@ table {
     width: 100%;
 }
 
-th, td {
+th,
+td {
     padding: 15px;
 }
 
-.checkout{
+.checkout {
     position: absolute;
     right: 100px;
     top: 35px;
 }
-.mycart{
+
+.mycart {
     background: #1f5652;
     color: white;
     position: relative;
